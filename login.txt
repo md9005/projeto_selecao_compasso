@@ -1,0 +1,29 @@
+1º) Login
+
+# language: pt
+
+Funcionalidade: Login no Ecommerce Fake
+  Como um cliente do site FakeEcommerce
+  gostaria de realizar loing no site 
+  para ter acessos as funcionalidades de usuario logado
+
+  # Completar o cenário abaixo
+  Cenário: Realizar login
+
+  	@login_certo
+  	Dado que Fulano possui uma conta no site FakeEcommerce
+  	E ele acessa a página de Login
+  	E ele preenche susas credenciais de forma válida
+  	Quando ele aciona a opção para logar
+  	Então deve ser direcionado para a página de sua conta
+
+
+  # Completar o cenário abaixo
+  Cenário: Login com falha
+
+	@login_errado  
+  	Dado que Fulano possui uma conta no site FakeEcommerce
+  	E ele acessa a página de Login
+  	E ele preenche suas credenciais de forma incorreta
+  	Quando ele aciona a opção logar
+  	Então uma mensagem de aviso de falha especificando qual erro deve ser exibida 
