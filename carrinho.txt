@@ -1,0 +1,23 @@
+3º) Carrinho
+
+  # language: pt
+
+Funcionalidade: Adição de Produto ao Carrinho
+	Como um cliente do site FakeEcommercer
+	Gostaria de adicionar um produto no carrinho 
+
+	Contexto:
+		Dado que Fulano estejá na página inical e logado no site FakeEcommercer
+
+	@adicionar_carrinho
+	Cenário:Adicior produto ao carrinho
+
+	Quando Fulano pesquisa por 'shirt'
+	Então devem ser retornados os produtos relacionado a pesquisa
+	E ele selecionar o produto
+	E ele seleciona as especificações do produto por:
+	|Quantidade|
+	|Tamanho   |
+	|Cor       |
+	E ele aciona a opção adicionar ao carrinho 
+	Então exibir uma mensagem informando que o produto foi para o carrinho com sucesso
